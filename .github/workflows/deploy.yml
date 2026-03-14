@@ -1,4 +1,4 @@
-name: Tanvi Website CI/CD
+name: Deploy Tanvi Website
 
 on:
  push:
@@ -9,15 +9,11 @@ jobs:
   runs-on: ubuntu-latest
 
   steps:
-
-  - name: Download Code
+  - name: Checkout code
     uses: actions/checkout@v3
 
   - name: Build Website
-    run: echo "Building Tanvi Website"
-
-  - name: Test Website
-    run: echo "Testing files"
+    run: echo "Building Tanvi Portfolio"
 
   - name: Deploy Website
-    run: echo "Website deployed"
+    run: echo "Website deployed successfully"
