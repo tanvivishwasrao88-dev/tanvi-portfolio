@@ -14,19 +14,23 @@ text-align:center;
 }
 
 nav{
-background:#222;
+background:#111;
 padding:15px;
 }
 
 nav a{
 color:white;
-margin:10px;
+margin:15px;
 text-decoration:none;
 font-weight:bold;
 }
 
+nav a:hover{
+color:#ffd700;
+}
+
 header{
-padding:60px;
+padding:70px 20px;
 }
 
 h1{
@@ -42,7 +46,7 @@ color:#ffd700;
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
-gap:20px;
+gap:25px;
 padding:20px;
 }
 
@@ -51,19 +55,25 @@ background:white;
 color:black;
 padding:25px;
 width:280px;
-border-radius:12px;
-box-shadow:0 8px 20px rgba(0,0,0,0.2);
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
 transition:0.3s;
 }
 
 .card:hover{
-transform:scale(1.05);
+transform:scale(1.08);
 }
 
 footer{
-margin-top:40px;
+background:#111;
 padding:20px;
-background:#222;
+margin-top:40px;
+}
+
+a{
+color:#764ba2;
+text-decoration:none;
+font-weight:bold;
 }
 
 </style>
@@ -79,40 +89,36 @@ background:#222;
 <a href="#">Contact</a>
 </nav>
 
-
 <header>
 
 <h1>Tanvi Vishwasrao</h1>
+
 <p id="typing"></p>
 
 </header>
 
-
 <div class="container">
 
 <div class="card">
-<h2>About Me</h2>
-<p>Cloud Computing graduate passionate about cloud infrastructure and data center technologies.</p>
+<h2>👩‍💻 About Me</h2>
+<p>I am a Cloud Computing graduate passionate about cloud infrastructure, networking, and data center technologies.</p>
 </div>
 
-
 <div class="card">
-<h2>Skills</h2>
-<p>☁️ Cloud Computing</p>
-<p>🌐 Networking</p>
-<p>💻 Hardware Troubleshooting</p>
+<h2>☁️ Skills</h2>
+<p>Cloud Computing</p>
+<p>Networking</p>
+<p>Hardware Troubleshooting</p>
 </div>
 
-
 <div class="card">
-<h2>Projects</h2>
+<h2>🚀 Projects</h2>
 <p>CI/CD Portfolio Website</p>
 <p>Cloud Infrastructure Basics</p>
 </div>
 
-
 <div class="card">
-<h2>Contact</h2>
+<h2>📬 Contact</h2>
 <p>Email: tanvi@email.com</p>
 <p>
 GitHub:
@@ -122,11 +128,9 @@ GitHub:
 
 </div>
 
-
 <footer>
 <p>© 2026 Tanvi Vishwasrao</p>
 </footer>
-
 
 <script>
 
@@ -144,7 +148,6 @@ function type(){
 type();
 
 </script>
-
 
 </body>
 </html>
