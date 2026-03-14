@@ -1,1 +1,23 @@
+name: Tanvi Website CI/CD
 
+on:
+ push:
+  branches: [main]
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+
+  steps:
+
+  - name: Download Code
+    uses: actions/checkout@v3
+
+  - name: Build Website
+    run: echo "Building Tanvi Website"
+
+  - name: Test Website
+    run: echo "Testing files"
+
+  - name: Deploy Website
+    run: echo "Website deployed"
