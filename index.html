@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Tanvi Portfolio</title>
 
 <style>
 
 body{
-font-family: Arial;
 margin:0;
+font-family:Arial;
 background:linear-gradient(135deg,#667eea,#764ba2);
 color:white;
 text-align:center;
 }
 
 header{
-padding:40px;
+padding:50px;
 }
 
 h1{
 font-size:40px;
+}
+
+#typing{
+font-size:20px;
+color:#ffd700;
+margin-top:10px;
 }
 
 .container{
@@ -48,6 +55,12 @@ margin-top:40px;
 padding:20px;
 }
 
+a{
+color:#ffd700;
+text-decoration:none;
+font-weight:bold;
+}
+
 </style>
 
 </head>
@@ -55,23 +68,29 @@ padding:20px;
 <body>
 
 <header>
+
 <h1>Tanvi Vishwasrao</h1>
-<p>☁️ Cloud Computing Graduate | Technology Enthusiast</p>
+
+<p id="typing"></p>
+
 </header>
+
 
 <div class="container">
 
 <div class="card">
 <h2>About Me</h2>
-<p>I am passionate about cloud infrastructure, networking, and data center technologies.</p>
+<p>I am a Cloud Computing graduate passionate about cloud infrastructure and data center technologies.</p>
 </div>
+
 
 <div class="card">
 <h2>Skills</h2>
 <p>☁️ Cloud Computing</p>
 <p>🌐 Networking</p>
-<p>🖥 Hardware Troubleshooting</p>
+<p>💻 Hardware Troubleshooting</p>
 </div>
+
 
 <div class="card">
 <h2>Projects</h2>
@@ -79,11 +98,43 @@ padding:20px;
 <p>Cloud Infrastructure Basics</p>
 </div>
 
+
+<div class="card">
+<h2>Contact</h2>
+<p>Email: tanvi@email.com</p>
+<p>
+GitHub: 
+<a href="https://github.com/" target="_blank">My GitHub</a>
+</p>
 </div>
+
+</div>
+
 
 <footer>
 <p>© 2026 Tanvi Vishwasrao</p>
 </footer>
 
+
+
+<script>
+
+const text = "Cloud Computing Graduate ☁️ | DevOps Learner";
+let index = 0;
+
+function type(){
+ if(index < text.length){
+  document.getElementById("typing").innerHTML += text.charAt(index);
+  index++;
+  setTimeout(type,80);
+ }
+}
+
+type();
+
+</script>
+
+
 </body>
+
 </html>
